@@ -1,0 +1,61 @@
+<div class="container">
+  <p>proyectos-component works!</p>
+
+  <div class="row mt-3 mb-3">
+      <div class="col">
+          <form action="">
+              <fieldset>
+                  <legend>Introduce los datos de un empleado:</legend>
+                  <div class="row mt-3">
+                      <div class="col-2">
+                          <label for="nombre">Nombre</label>
+                      </div>
+                      <div class="col-6">
+                          <input type="text" id="nombre" class="form-control form-control-sm" name="nombre" [(ngModel)]="cuadroNombre">
+                      </div>
+                      <div class="col-4"></div>
+                  </div>
+                  <div class="row mt-3">
+                      <div class="col-2">
+                          <label for="apellido">Apellido</label>
+                      </div>
+                      <div class="col-6">
+                          <input type="text" id="apellido" class="form-control form-control-sm" name="apellido" [(ngModel)]="cuadroApellido">
+                      </div>
+                      <div class="col-4"></div>
+                  </div>
+                  <div class="row mt-3">
+                      <div class="col-2">
+                          <label for="cargo">Cargo</label>
+                      </div>
+                      <div class="col-6">
+                          <input type="text" id="cargo" class="form-control form-control-sm" name="cargo" [(ngModel)]="cuadroCargo">
+                      </div>
+                      <div class="col-4"></div>
+                  </div>
+                  <div class="row mt-3">
+                      <div class="col-2">
+                          <label for="salario">Salario</label>
+                      </div>
+                      <div class="col-6">
+                          <input type="number" id="salario" class="form-control form-control-sm" name="salario" [(ngModel)]="cuadroSalario">
+                      </div>
+                      <div class="col-4"></div>
+                  </div>
+                  <div class="row mt-3">
+                      <div class="col-2"></div>
+                      <div class="col-6">
+                          <button type="submit" class="btn btn-primary" (click)="agregarEmpleado()">Guardar
+                </button>
+                      </div>
+                      <div class="col-4"></div>
+                  </div>
+              </fieldset>
+          </form>
+      </div>
+  </div>
+
+  <div style="text-align:right">
+      <button class="btn btn-primary" (click)="volverHome()">Ir a Inicio</button>
+  </div>
+</div>

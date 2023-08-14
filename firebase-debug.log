@@ -1,0 +1,83 @@
+[debug] [2023-08-14T21:52:57.457Z] ----------------------------------------------------------------------
+[debug] [2023-08-14T21:52:57.459Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\josea\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-08-14T21:52:57.460Z] CLI Version:   12.4.7
+[debug] [2023-08-14T21:52:57.460Z] Platform:      win32
+[debug] [2023-08-14T21:52:57.460Z] Node Version:  v16.17.0
+[debug] [2023-08-14T21:52:57.461Z] Time:          Mon Aug 14 2023 18:52:57 GMT-0300 (hora estándar de Argentina)
+[debug] [2023-08-14T21:52:57.462Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-14T21:52:57.473Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-14T21:52:57.473Z] > authorizing via signed-in user (yami.hamui@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\josea\Documents\visual studio\angularclientserver\app-empleados
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-08-14T21:53:12.647Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-08-14T21:53:13.466Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-08-14T21:53:13.466Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project mis-clientes-5059c (Mis Clientes) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2023-08-14T21:53:25.319Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/mis-clientes-5059c/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-08-14T21:53:25.321Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/mis-clientes-5059c/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/mis-clientes-5059c
+[debug] [2023-08-14T21:53:27.141Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/mis-clientes-5059c/services/firebasedatabase.googleapis.com 200
+[debug] [2023-08-14T21:53:27.141Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/mis-clientes-5059c/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2023-08-14T21:53:27.143Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/mis-clientes-5059c/locations/-/instances/mis-clientes-5059c-default-rtdb [none]
+[debug] [2023-08-14T21:53:29.488Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/mis-clientes-5059c/locations/-/instances/mis-clientes-5059c-default-rtdb 200
+[debug] [2023-08-14T21:53:29.489Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/mis-clientes-5059c/locations/-/instances/mis-clientes-5059c-default-rtdb {"name":"projects/113786389773/locations/us-central1/instances/mis-clientes-5059c-default-rtdb","project":"projects/113786389773","databaseUrl":"https://mis-clientes-5059c-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2023-08-14T21:53:45.857Z] >>> [apiv2][query] GET https://mis-clientes-5059c-default-rtdb.firebaseio.com/.settings/rules.json [none]
+[debug] [2023-08-14T21:53:46.542Z] <<< [apiv2][status] GET https://mis-clientes-5059c-default-rtdb.firebaseio.com/.settings/rules.json 200
+[debug] [2023-08-14T21:53:46.542Z] <<< [apiv2][body] GET https://mis-clientes-5059c-default-rtdb.firebaseio.com/.settings/rules.json [stream]
+[info] +  Database Rules for mis-clientes-5059c-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2023-08-14T21:55:32.839Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-08-14T21:55:33.201Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-08-14T21:55:33.201Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.1.0","browserURL":"https://www.gstatic.com/firebasejs/10.1.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.1.0/firebase.tgz"},"live":{"version":"10.1","browserURL":"https://www.gstatic.com/firebasejs/live/10.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.1/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.1.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.1.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.1.0/firebase-auth/cordova.js","functions":"https://www.gstatic.com/firebasejs/10.1.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.1.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.1.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.1.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.1.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.1.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.1.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.1.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore.memory.js"}}
+[info] +  Wrote dist/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\josea\Documents\visual studio\angularclientserver\app-empleados 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=15953661&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-08-14T21:56:13.426Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-08-14T21:56:13.426Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-08-14T21:56:14.180Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-08-14T21:56:14.180Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-08-14T21:56:14.194Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-08-14T21:56:14.839Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-08-14T21:56:14.839Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"YamilH","id":112255242,"node_id":"U_kgDOBrDhCg","avatar_url":"https://avatars.githubusercontent.com/u/112255242?v=4","gravatar_id":"","url":"https://api.github.com/users/YamilH","html_url":"https://github.com/YamilH","followers_url":"https://api.github.com/users/YamilH/followers","following_url":"https://api.github.com/users/YamilH/following{/other_user}","gists_url":"https://api.github.com/users/YamilH/gists{/gist_id}","starred_url":"https://api.github.com/users/YamilH/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/YamilH/subscriptions","organizations_url":"https://api.github.com/users/YamilH/orgs","repos_url":"https://api.github.com/users/YamilH/repos","events_url":"https://api.github.com/users/YamilH/events{/privacy}","received_events_url":"https://api.github.com/users/YamilH/received_events","type":"User","site_admin":false,"name":"Yamil Hamui","company":null,"blog":"","location":"Rosario, Argentina","email":null,"hireable":null,"bio":"Software Developer\r\n\r\nyamilhamui@gmail.com","twitter_username":null,"public_repos":36,"public_gists":0,"followers":5,"following":6,"created_at":"2022-08-27T11:56:55Z","updated_at":"2023-08-14T21:56:02Z","private_gists":0,"total_private_repos":22,"owned_private_repos":22,"disk_usage":153165,"collaborators":2,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as YamilH 
+[info] 

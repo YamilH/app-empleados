@@ -1,0 +1,13 @@
+<div class="row mt-3">
+    <div class="col">
+        <div>
+            {{indice+1}}. {{empleadoDeLista.nombre}} {{empleadoDeLista.apellido}} {{empleadoDeLista.cargo}} {{empleadoDeLista.salario}}
+            <a [routerLink]="['/actualiza', indice]" [queryParams]="{accion:'1'}">Actualizar</a>&nbsp;
+            <a [routerLink]="['/actualiza', indice]" [queryParams]="{accion:'2'}">Eliminar</a>
+        </div>
+        <ul style="list-style:none;">
+            <li *ngFor="let caracteristica of arrayCaracteristicas">{{caracteristica}}</li>
+        </ul>
+        <app-caracteristicas-empleado-c (caracteristicasEmpleado)="agregarCaracteristica($event)"></app-caracteristicas-empleado-c>
+
+    </div>
