@@ -1,8 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-
+import 'dotenv/config'
+import { enableProdMode } from '@angular/core';
 import firebase from 'firebase/compat/app'
 import { LoginService } from './login/login.service';
+import { environment } from './environments/environments'
 
+if (environment.production) {
+  enableProdMode();
+}
 
 @Component({
   selector: 'app-root',
@@ -19,7 +24,7 @@ export class AppComponent implements OnInit {
     
     firebase.initializeApp({
 
-      apiKey: "AIzaSyB1KWENE8yM-lk6I60qiyvrhNFnx1jJiEM",
+      apiKey: environment['apiKey'],
       authDomain: "mis-clientes-5059c.firebaseapp.com",
       
     });
