@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import 'dotenv/config'
 import { enableProdMode } from '@angular/core';
 import firebase from 'firebase/compat/app'
 import { LoginService } from './login/login.service';
@@ -16,9 +15,7 @@ if (environment.production) {
 })
 export class AppComponent implements OnInit {
   
-  constructor(private loginService:LoginService){
-    
-  }
+  constructor(private loginService:LoginService){}
 
   ngOnInit(): void {
     

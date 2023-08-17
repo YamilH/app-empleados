@@ -9,12 +9,11 @@ export class LoginGuardian {
 
     }
 
-    canActivateFn = (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => {
+    canActivate = (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => {
 
-        const router = inject(Router);
-         const loginservice = inject(LoginService);
+        const isLoggedIn = this.login.estaLogueado();
         
-        if(LoginService.estaLogueado()){
+        if (this.login.estaLogueado()) {
             return true //Esta logueado el usuario
         }
         else{
